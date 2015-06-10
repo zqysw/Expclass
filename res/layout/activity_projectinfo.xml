@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+         <!-- 具体某个项目点击后进入的界面 -->
+	
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/projectanme" />
+
+    <TextView
+        android:id="@+id/projectname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_toRightOf="@+id/name"
+        android:text="名字" />
+
+    <TextView
+        android:id="@+id/projectworkers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/workers"
+        android:layout_alignBottom="@+id/workers"
+        android:layout_alignLeft="@+id/projectname"
+        android:text="成员" />
+
+    <TextView
+        android:id="@+id/workers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="30dp"
+        android:text="@string/projectworker" />
+
+    <TextView
+        android:id="@+id/projectimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/workers"
+        android:layout_below="@+id/projectdescription"
+        android:layout_marginTop="30dp"
+        android:text="@string/projectimg" />
+
+    <TextView
+        android:id="@+id/projectdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/projectimg"
+        android:layout_below="@+id/workers"
+        android:layout_marginTop="17dp"
+        android:text="描述" />
+    </RelativeLayout>
+    </LinearLayout>
+	<include 
+       layout="@layout/activity_flipperimg"
+        android:id="@+id/flipperimg"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+      />
+</LinearLayout>
+</ScrollView>

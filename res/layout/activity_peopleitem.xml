@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/leftlist_bg" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/peopleImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="34dp"
+        android:contentDescription="@string/stuimg"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/peopleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/peopleImg"
+        android:text="@string/stuname" />
+
+    <TextView
+        android:id="@+id/peoplePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peopleImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/stucontact" />
+
+    <TextView
+        android:id="@+id/peopleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peoplePhone"
+        android:layout_below="@+id/peopleImg"
+        android:layout_marginTop="0dp"
+        android:text="@string/stuid" />
+
+    <TextView
+        android:id="@+id/peopleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peopleId"
+        android:layout_below="@+id/peopleId"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/stuemail" />
+
+</RelativeLayout>

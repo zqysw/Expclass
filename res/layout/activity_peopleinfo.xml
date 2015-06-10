@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/stuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stuphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/stuemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+<!-- 
+    <TextView
+        android:id="@+id/stuhonor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获得荣誉"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+    
+     <ListView
+        android:id="@+id/stu_honor_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="1px"
+        android:background="@drawable/leftlist_bg"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+    </ListView>
+- -->
+    <TextView
+        android:id="@+id/stuprojects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参与项目" 
+         android:textSize="16dp"
+        android:textStyle="bold"
+       />
+
+    <ListView
+        android:id="@+id/stu_pro_list"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/leftlist_bg" 
+       android:layout_marginLeft="15dp" 
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+      >
+    </ListView>
+
+</LinearLayout>
+
+
